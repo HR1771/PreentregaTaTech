@@ -1,0 +1,145 @@
+/* styles.css */
+
+header {
+    background-image: url('./assets/img/header.jpeg'); background-size: 100% 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #795548;
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    padding: 1em 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #3b2d09;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    font-size: larger;
+    color: #3b3009;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    background-color: rgb(250, 248, 248);
+    border: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.imagen-redondeada {
+    border-radius: 15px;
+}
+.cafes-container, .cursos-container {
+    padding: 2em;
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+section {
+    color:#3b2d09;
+    text-align: center;
+    padding: 2em;
+    padding-bottom: 0;
+    background-color: #FFECB3;
+}
+
+
+.cursos-container {
+    color: #3b2d09;
+    padding-bottom: 1em;
+    background-color: #FFC107 ;
+    border: 0;
+    
+}
+
+main section div a {
+    font-size: larger;
+    color: #3b3009;
+    text-decoration: none;
+    
+}
+
+
+main section div a:hover {
+    background-color: rgb(250, 248, 248);
+    border: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+footer {
+    background-color: #795548;
+    color: white;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+
+}
+
+footer div.contacto a {
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form label, form input, form textarea, form button {
+    margin-bottom: 1em;
+}
+
+form {
+    border: 1em;
+    margin: 20px;
+    padding: 50px;
+}
+
+
+#contacto form {
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .productos-container, .cursos-container {
+        flex-direction: column;
+    }
+}
